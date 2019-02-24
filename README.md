@@ -1,4 +1,4 @@
-# ![WAS (not WASM)](https://raw.github.com/jedisct1/was-not-wasm/master/logo.png)
+# WAS (not WASM)
 
 An overparanoid memory allocator to make WebAssembly applications more
 predictable.

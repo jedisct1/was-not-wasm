@@ -96,7 +96,7 @@ the heap base is stored in the `HEAP_BASE` global.
 
 WAS (not WASM) was originally made to work with [AssemblyScript](https://assemblyscript.org).
 
-In order to do so, use the `memory` allocator:
+In order to do so, use the `system` allocator:
 
 ```typescript
 import 'allocator/system';

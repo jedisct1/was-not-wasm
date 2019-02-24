@@ -38,6 +38,8 @@ single allocation, so that a single-byte overflow will cause a fault.
 WAS (not WASM) inserts a canary before partially allocated pages, and
 verifies that it hasn't been tampered in order to detected underflows.
 
+WAS (not WASM) detects double-free(), use-after-free(), invalid free().
+
 WAS (not WASM) keeps track of the number of allocations, deallocations
 and total memory usage, so you can scream at how much of these
 WebAssembly applications do, and optimize yours accordingly.

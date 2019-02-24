@@ -61,6 +61,9 @@ pub extern "C" fn malloc(size: u32, ctx: &mut Ctx) -> u32 {
 }
 
 pub extern "C" fn free(start: u32, ctx: &mut Ctx) {
+    if start == 0 {
+        return;
+    }
     let mut ctx_data = unsafe { Box::from_raw(ctx.data as *mut CtxData) };
     let allocation = match ctx_data.allocations.get(&start) {
         None => panic!("free()ing invalid offset {}", start),

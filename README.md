@@ -88,7 +88,7 @@ the heap base is stored in the `HEAP_BASE` global.
 
 ## Usage with AssemblyScript
 
-WAS (not WASM) was originally made to work with AssemblyScript.
+WAS (not WASM) was originally made to work with [AssemblyScript](https://assemblyscript.org).
 
 In order to do so, use the `memory` allocator:
 

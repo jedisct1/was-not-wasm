@@ -76,7 +76,7 @@ was -f app.wasm
 ```
 
 The `--canary-check-on-alloc` option checks every single canary before
-every single application. This is slow, and will get slower as the
+every single allocation. This is slow, and will get slower as the
 number of allocation grows.
 
 The `--heap-base` option sets how much data is already present on the

@@ -48,6 +48,10 @@ WAS (not WASM) is not designed to be fast. It is designed to help you
 develop safer applications. Or faster applications, by using unsafe
 constructions with more confidence.
 
+WASM (not WASM) runs WASM code using
+[Cranelift](https://github.com/CraneStation/cranelift)
+via [Wasmer](https://wasmer.io/).
+
 ## Installation
 
 Install Rust, and use `cargo`:

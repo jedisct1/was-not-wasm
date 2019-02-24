@@ -29,7 +29,7 @@ impl CtxData {
         let page_mask = page_size - 1;
         let heap_offset = (runtime_config.heap_base + page_mask) & !page_mask;
         let allocations = HashMap::new();
-        let canary = 0xd0;
+        let canary = 0xdf;
         let junk = 0xdb;
         CtxData {
             page_size,

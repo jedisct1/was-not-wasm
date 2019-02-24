@@ -28,8 +28,13 @@ pub extern "C" fn malloc(size: u32, ctx: &mut Ctx) -> u32 {
             heap_ptr.offset(offset as isize) as *mut _,
             rounded_size as usize,
             libc::PROT_READ | libc::PROT_WRITE,
-        )
-    };
+        );
+        ptr::write_bytes(
+            heap_ptr.offset(start as isize),
+            ctx_data.junk,
+            size as usize,
+        );
+    }
     if offset != start {
         unsafe {
             ptr::write_bytes(

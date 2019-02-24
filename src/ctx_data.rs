@@ -16,6 +16,7 @@ pub struct CtxData {
     pub page_size: u32,
     pub allocations: HashMap<u32, Allocation>,
     pub canary: u8,
+    pub junk: u8,
     pub canary_check_on_alloc: bool,
     pub alloc_count: u64,
     pub free_count: u64,
@@ -29,11 +30,13 @@ impl CtxData {
         let heap_offset = (runtime_config.heap_base + page_mask) & !page_mask;
         let allocations = HashMap::new();
         let canary = 0xd0;
+        let junk = 0xdb;
         CtxData {
             page_size,
             heap_offset,
             allocations,
             canary,
+            junk,
             canary_check_on_alloc: runtime_config.canary_check_on_alloc,
             alloc_count: 0,
             free_count: 0,

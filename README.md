@@ -30,6 +30,8 @@ pointer will fault.
 WAS (not WASM) never reuses allocated pages after they are `free()`d.
 Deallocated pages become inaccessible.
 
+WAS (not WASM) fills newly allocated regions with junk.
+
 WAS (not WASM) ensures that a guard page immediately follows every
 single allocation, so that a single-byte overflow will cause a fault.
 

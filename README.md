@@ -1,6 +1,6 @@
 # WAS (not WASM)
 
-An overparanoid memory allocator to make WebAssembly applications more
+A hostile memory allocator to make WebAssembly applications more
 predictable.
 
 ## Blurb

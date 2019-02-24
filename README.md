@@ -115,7 +115,7 @@ declare function terminate(): void;
 ```
 
 AssemblyScript stores static data at the beginning of the heap. The
-heap base after this static data, stored in the `HEAP_BASE` global.
+heap base after this static data is stored in the `HEAP_BASE` global.
 
 A quick way to print it while using WAS (not WASM) is to temporarily
 add this to your application:

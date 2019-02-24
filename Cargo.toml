@@ -1,10 +1,10 @@
 [package]
-name = "zo"
+name = "was"
 version = "0.1.0"
 authors = ["Frank Denis <github@pureftpd.org>"]
 edition = "2018"
 
 [dependencies]
-structopt = "0.2"
 libc = "0.2"
+structopt = "0.2"
 wasmer-runtime = "0.1"

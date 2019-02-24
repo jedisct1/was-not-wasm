@@ -27,7 +27,7 @@ explicitly allocated by the application.
 WAS (not WASM) makes static data read-only. Writing to a `NULL`
 pointer will fault.
 
-WAS (not WASM) never reuses allocated pages after they are `free()`d.
+WAS (not WASM) never reuses allocated pages after they are `free()`'d.
 Deallocated pages become inaccessible.
 
 WAS (not WASM) fills newly allocated regions with junk.

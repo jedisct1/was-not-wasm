@@ -56,7 +56,7 @@ cargo install
 
 ## Usage
 
-```
+```text
 USAGE:
     was [FLAGS] [OPTIONS] --file <file>
 

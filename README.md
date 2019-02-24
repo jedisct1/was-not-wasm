@@ -50,7 +50,7 @@ constructions with more confidence.
 
 WASM (not WASM) runs WASM code using
 [Cranelift](https://github.com/CraneStation/cranelift)
-via [Wasmer](https://wasmer.io/).
+and [Wasmer](https://wasmer.io/).
 
 ## Installation
 

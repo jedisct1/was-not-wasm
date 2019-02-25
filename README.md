@@ -37,7 +37,7 @@ WAS (not WASM) ensures that a guard page immediately follows every
 single allocation, so that a single-byte overflow will cause a fault.
 
 WAS (not WASM) inserts a canary in partially allocated pages, and
-verifies that it hasn't been tampered in order to detected underflows.
+verifies that it hasn't been tampered with in order to detected underflows.
 
 WAS (not WASM) detects double-free(), use-after-free(), invalid free().
 

@@ -5,8 +5,9 @@ predictable.
 
 ## Blurb
 
-The WebAssembly memory model doesn't offer any protection against buffer
-underflows/overflows.
+The WebAssembly memory model
+[doesn't offer any protection](https://00f.net/2018/11/25/webassembly-doesnt-make-unsafe-languages-safe/)
+against buffer underflows/overflows.
 
 As long as accesses are made within the bounds of the linear memory
 segments, no page faults will ever occur.

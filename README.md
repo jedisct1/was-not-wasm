@@ -46,8 +46,8 @@ and total memory usage, so you can scream at how many of these
 WebAssembly applications do, and optimize yours accordingly.
 
 WAS (not WASM) is not designed to be fast. It is designed to help you
-develop safer applications. Or faster applications, by using unsafe
-constructions with more confidence.
+develop safer applications. Or eventually faster applications, by using
+unsafe constructions with more confidence.
 
 WASM (not WASM) runs WASM code using
 [Cranelift](https://github.com/CraneStation/cranelift)

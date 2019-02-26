@@ -49,7 +49,7 @@ WAS (not WASM) is not designed to be fast. It is designed to help you
 develop safer applications. Or eventually faster applications, by using
 unsafe constructions with more confidence.
 
-WASM (not WASM) runs WASM code using
+WAS (not WASM) runs WASM code using
 [Cranelift](https://github.com/CraneStation/cranelift)
 and [Wasmer](https://wasmer.io/).
 

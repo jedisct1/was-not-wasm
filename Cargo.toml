@@ -7,4 +7,4 @@ edition = "2018"
 [dependencies]
 libc = "0.2"
 structopt = "0.3"
-wasmer-runtime = "0.12"
+wasmer-runtime = "0.1"
